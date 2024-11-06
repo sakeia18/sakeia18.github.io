@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>PRINCIPAL SAKE</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/ICO.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <h2 class="m-0 text-primary"><img src="img/ICO.png" width="50px"></i>SAKE.IA</h2>
+    </a>
+    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <!-- Home Dropdown -->
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle active" id="homeDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Home
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+                    <li><a href="index.html" class="dropdown-item">Página Principal</a></li>
+                </ul>
+            </div>
+            <a href="recursos.html" class="nav-item nav-link">Módulos</a>
+            <a href="chatboot.html" class="nav-item nav-link">Chat-Boot</a>
+            <a href="bibliografia.html" class="nav-item nav-link">Bibliografía</a>
+            <!-- <a href="Teoria Financiera.html" class="nav-item nav-link">Teoria</a> -->
+
+            <!-- MODULO Dropdown -->
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">UNIDAD 1</a>
+                <div class="dropdown-menu fade-down m-0">
+                    <!-- MóDULO 1 -->
+                    <a href="#" class="dropdown-item d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#modulo1" onclick="closeOtherMenus('modulo1')">
+                        Módulo 1 <i class="fa fa-angle-right"></i>
+                    </a>
+                    <div id="modulo1" class="collapse ms-4">
+                        <a href="videosmodulo1.html" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Videos</a>
+                        <a href="chatboot.html" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Chat-boots</a>
+                        <a href="bibliografia.html" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Bibliografía</a>
+                    </div>
+                    
+                    <!-- MODULO 2 -->
+                    <a href="#" class="dropdown-item d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#modulo2" onclick="closeOtherMenus('modulo2')">
+                        Módulo 2 <i class="fa fa-angle-right"></i>
+                    </a>
+                    <div id="modulo2" class="collapse ms-4">
+                        <a href="videosmodulo2" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Videos</a>
+                        <a href="chatboot.html" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Chat-boots</a>
+                        <a href="bibliografia.html" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Bibliografía</a>
+                    </div>
+
+                    <!-- MODULO 3 -->
+                    <a href="#" class="dropdown-item d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#modulo3" onclick="closeOtherMenus('modulo3')">
+                        Módulo 3 <i class="fa fa-angle-right"></i>
+                    </a>
+                    <div id="modulo3" class="collapse ms-4">
+                        <a href="videosmodulo3" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Videos</a>
+                        <a href="chatboot.html" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Chat-boots</a>
+                        <a href="bibliografia.html" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Bibliografía</a>
+                    </div>
+
+                    <!-- MODULO 4 -->
+                    <a href="#" class="dropdown-item d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#modulo4" onclick="closeOtherMenus('modulo4')">
+                        Módulo 4 <i class="fa fa-angle-right"></i>
+                    </a>
+                    <div id="modulo4" class="collapse ms-4">
+                        <a href="videosmodulo4" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Videos</a>
+                        <a href="chatboot.html" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Chat-boots</a>
+                        <a href="bibliografia.html" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Bibliografía</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNIDAD 2 Dropdown -->
+            <div class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">UNIDAD 2</a>
+                <div class="dropdown-menu fade-down m-0">
+                    <!-- MODULO 5 -->
+                    <a href="#" class="dropdown-item d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#modulo5" onclick="closeOtherMenus('modulo5')">
+                        Módulo 5 <i class="fa fa-angle-right"></i>
+                    </a>
+                    <div id="modulo5" class="collapse ms-4">
+                        <a href="videosmodulo5" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Videos</a>
+                        <a href="chatboot.html" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Chat-boots</a>
+                        <a href="bibliografia.html" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Bibliografía</a>
+                    </div>
+
+                    <!-- MODULO 6 -->
+                    <a href="#" class="dropdown-item d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#modulo6" onclick="closeOtherMenus('modulo6')">
+                        Módulo 6 <i class="fa fa-angle-right"></i>
+                    </a>
+                    <div id="modulo6" class="collapse ms-4">
+                        <a href="videosmodulo6" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Videos</a>
+                        <a href="chatboot.html" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Chat-boots</a>
+                        <a href="bibliografia.html" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Bibliografía</a>
+                    </div>
+
+                    <!-- MODULO 7 -->
+                    <a href="#" class="dropdown-item d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#modulo7" onclick="closeOtherMenus('modulo7')">
+                        Módulo 7 <i class="fa fa-angle-right"></i>
+                    </a>
+                    <div id="modulo7" class="collapse ms-4">
+                        <a href="videosmodulo7" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Videos</a>
+                        <a href="chatboot.html" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Chat-boots</a>
+                        <a href="bibliografia.html" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Bibliografía</a>
+                    </div>
+
+                    <!-- MODULO 8 -->
+                    <a href="#" class="dropdown-item d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#modulo8" onclick="closeOtherMenus('modulo8')">
+                        Módulo 8 <i class="fa fa-angle-right"></i>
+                    </a>
+                    <div id="modulo8" class="collapse ms-4">
+                        <a href="videosmodulo8" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Videos</a>
+                        <a href="chatboot.html" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Chat-boots</a>
+                        <a href="bibliografia.html" class="dropdown-item sub-item"><i class="fa fa-circle me-2"></i>Bibliografía</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+<!-- Script para cerrar submenús cuando se abre otro -->
+<script>
+    // Cierra otros menús abiertos
+    function closeOtherMenus(currentMenu) {
+        const menus = ['modulo1', 'modulo2', 'modulo3', 'modulo4', 'modulo5', 'modulo6', 'modulo7', 'modulo8'];
+        menus.forEach(menu => {
+            if (menu !== currentMenu) {
+                const element = document.getElementById(menu);
+                if (element && element.classList.contains('show')) {
+                    new bootstrap.Collapse(element).hide();
+                }
+            }
+        });
+    }
+</script>
+
+
+    <!-- CSS para alinear los puntos -->
+    <style>
+        .sub-item i {
+            color: #000;
+            font-size: 8px;
+            vertical-align: middle;
+        }
+    </style>
+
+    <!-- Carousel Start autoplay=1&mute=1 -->
+<div class="container-fluid p-0 mb-5">
+    <div class="owl-carousel header-carousel position-relative">
+        <!-- First Carousel Item with Video -->
+        <div class="owl-carousel-item position-relative">
+            <!-- Video instead of image -->
+            <iframe width="1920" height="1080" src="https://www.youtube.com/embed/81eY9AFXgOQ?si=ZuATeRpYO407nu7H&autoplay=1&mute=1&loop=1&playlist=81eY9AFXgOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center"
+                style="background: rgba(24, 29, 56, .7);">
+                <div class="container">
+                    <div class="row justify-content-start">
+                        <div class="col-sm-10 col-lg-8">
+                            <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Curso Gratuito en Linea</h5>
+                            <h1 class="display-3 text-white animated slideInDown">Refuerza tus Conocimientos en cualquier Momento</h1>
+                            <p class="fs-5 text-white mb-4 pb-2">Aprende IA generativa de texto con recursos interactivos como videos, ejercicios y documentos. Mejora tus habilidades y alcanza tus metas académicas desde la comodidad de tu hogar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Carousel End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
+                            <h5 class="mb-3">Docentes</h5>
+                            <p>Aprende de docentes para el buen uso de la IA generativa de texto en el día a día</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-globe text-primary mb-4"></i>
+                            <h5 class="mb-3">Acceso Global</h5>
+                            <p>Accede desde cualquier lugar y desde cualquier dispositivo con acceso a interneta a los recursos educativos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-home text-primary mb-4"></i>
+                            <h5 class="mb-3">Chat-boots y Ejercicios</h5>
+                            <p>Desarrolla tus habilidades con el uso de diferentes IA's generativas que te ayudaran en el proceso de preparacion </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="service-item text-center pt-3">
+                        <div class="p-4">
+                            <i class="fa fa-3x fa-book-open text-primary mb-4"></i>
+                            <h5 class="mb-3">Biblioteca de Recursos</h5>
+                            <p>Explora una biblioteca de PDFs, videos y guías especializadas para complementar tu
+                                estudio y reforzar tus conocimientos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="img-fluid position-absolute w-100 h-100" src="img/LOGO SAKE IA.jpg" alt=""
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h6 class="section-title bg-white text-start text-primary pe-3">Nosotros</h6>
+                    <h1 class="mb-4">Binvenidos a SAKE.IA</h1>
+                    <p class="mb-4">En nuestra plataforma, ofrecemos una experiencia de aprendizaje diseñada específicamente para estudiantes interesados en la inteligencia artificial generativa de texto. Contamos con recursos interactivos, como simulaciones prácticas, videos explicativos y un chatbot especializado, para facilitar la comprensión de temas clave como procesamiento de lenguaje natural, modelos de lenguaje y aplicaciones en diversas áreas.</p>
+                    <p class="mb-4">Nuestro objetivo es ayudar a mejorar el rendimiento académico de los estudiantes,
+                        proporcionándoles acceso a contenidos de calidad y herramientas útiles que apoyen su
+                        aprendizaje.
+                    </p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Docentes Experimentados
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Acceso Total y Gratuito
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Materiales de Estudio
+                                Organizados</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Videos Explicativos</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Chatbots Especializados
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Categories Start -->
+    <div class="container-xxl py-5 category">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Categorias</h6>
+                <h1 class="mb-5">Qué aprenderás</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-12 col-md-12">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden">
+                                <img class="img-fluid w-100" src="img/BASES IA.png" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                                    style="margin: 1px;">
+                                    <h5 class="m-0">BASES CHATGPT</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a class="position-relative d-block overflow-hidden">
+                                <img class="img-fluid w-100" src="img/PROMPTS.png" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                                    style="margin: 1px;">
+                                    <h5 class="m-0">PROMPTS</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid w-100" src="img/CONTENIDO.png" alt="">
+                                <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3"
+                                    style="margin: 1px;">
+                                    <h5 class="m-0">CREACIÓN DE CONTENIDO</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Categories End -->
+
+    <!-- Recursos Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Cursos</h6>
+                <h1 class="mb-5">Nuestros Módulos</h1>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/BASES IA.png" alt="Recursos de Economía">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="recursos.html#modulo1"
+                                    class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                    style="border-radius: 30px 30px 30px 30px;">Ver más</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">Las de Bases ChatGPT</h3>
+                            <div class="mb-3">
+                                <small>(Módulo 1)</small>
+                            </div>
+                            <h5 class="mb-4">PDFs, Videos</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-book text-primary me-2"></i>PDFs</small>
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-video text-primary me-2"></i>Videos</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/PROMTPS1.png" alt="Recursos de Economía">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="recursos.html#modulo_2"
+                                    class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                    style="border-radius: 30px 30px 30px 30px;">Ver más</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">Prompts</h3>
+                            <div class="mb-3">
+                                <small>(Módulo 2)</small>
+                            </div>
+                            <h5 class="mb-4">PDFs, Videos</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-book text-primary me-2"></i>PDFs</small>
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-video text-primary me-2"></i>Videos</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/PROMPTS.png" alt="Recursos de Economía">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="recursos.html#modulo_3"
+                                    class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                    style="border-radius: 30px 30px 30px 30px;">Ver más</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">Introducción a Prompts</h3>
+                            <div class="mb-3">
+                                <small>(Módulo 3)</small>
+                            </div>
+                            <h5 class="mb-4">PDFs, Videos</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-book text-primary me-2"></i>PDFs</small>
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-video text-primary me-2"></i>Videos</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/SIMPLIFICAR INFO.png" alt="Recursos de Economía">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="recursos.html#modulo_4"
+                                    class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                    style="border-radius: 30px 30px 30px 30px;">Ver más</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">Simplificar Información</h3>
+                            <div class="mb-3">
+                                <small>(Módulo 4)</small>
+                            </div>
+                            <h5 class="mb-4">PDFs, Videos</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-book text-primary me-2"></i>PDFs</small>
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-video text-primary me-2"></i>Videos</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/FUNDAMENTOS.png" alt="Recursos de Economía">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="recursos.html#modulo_5"
+                                    class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                    style="border-radius: 30px 30px 30px 30px;">Ver más</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">Fundamentos de la Redacción</h3>
+                            <div class="mb-3">
+                                <small>(Módulo 5)</small>
+                            </div>
+                            <h5 class="mb-4">PDFs, Videos</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-book text-primary me-2"></i>PDFs</small>
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-video text-primary me-2"></i>Videos</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/GENERACIÓN DE CONTENIDO.png" alt="Recursos de Economía">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="recursos.html#modulo_6"
+                                    class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                    style="border-radius: 30px 30px 30px 30px;">Ver más</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">Generación de Contenido</h3>
+                            <div class="mb-3">
+                                <small>(Módulo 6)</small>
+                            </div>
+                            <h5 class="mb-4">PDFs, Videos</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-book text-primary me-2"></i>PDFs</small>
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-video text-primary me-2"></i>Videos</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/MARKETING Y COMUNICACIÓN.png" alt="Recursos de Finanzas">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="recursos.html#modulo_7"
+                                    class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                    style="border-radius: 30px 30px 30px 30px;">Ver más</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">Marketing y Comunicación</h3>
+                            <div class="mb-3">
+                                <small>(Módulo 7)</small>
+                            </div>
+                            <h5 class="mb-4">PDFs, Videos</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-book text-primary me-2"></i>PDFs</small>
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-video text-primary me-2"></i>Videos</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="course-item bg-light">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/IMPULSA TU CREATIVIDAD.png" alt="Recursos de Estadística">
+                            <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
+                                <a href="recursos.html#modulo_8"
+                                    class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end"
+                                    style="border-radius: 30px 30px 30px 30px;">Ver más</a>
+                            </div>
+                        </div>
+                        <div class="text-center p-4 pb-0">
+                            <h3 class="mb-0">Impulsa tu Creativadad</h3>
+                            <div class="mb-3">
+                                <small>(Módulo 8)</small>
+                            </div>
+                            <h5 class="mb-4">PDFs, Videos</h5>
+                        </div>
+                        <div class="d-flex border-top">
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-book text-primary me-2"></i>PDFs</small>
+                            <small class="flex-fill text-center border-end py-2"><i
+                                    class="fa fa-video text-primary me-2"></i>Videos</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Recursos End -->
+
+
+    <!-- TEAM Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">INSTRUCTORES</h6>
+                <h1 class="mb-5">Docentes a Cargo</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/CV SAMOYA-FINO.jpeg"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Sander Moya</h5>
+                    <p>Egresados</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">Estudiante egresado de la Universidad Central del Ecuador en la Facultad de Filosofía, Letras y Ciencias de la Educación de la Carrera de Pedagogía de las Ciencias Experimentales Informática</p>
+                    </div>
+                </div>
+                
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/CV-FINO.jpg"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Kevin Yanza</h5>
+                    <p>Egresados</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">Estudiante egresado de la Universidad Central del Ecuador en la Facultad de Filosofía, Letras y Ciencias de la Educación de la Carrera de Pedagogía de las Ciencias Experimentales Informática</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/CV SAMOYA-FINO.jpeg"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Sander Moya</h5>
+                    <p>Egresados</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">Estudiante egresado de la Universidad Central del Ecuador en la Facultad de Filosofía, Letras y Ciencias de la Educación de la Carrera de Pedagogía de las Ciencias Experimentales Informática</p>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="border rounded-circle p-2 mx-auto mb-3" src="img/CV-FINO.jpg"
+                        style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">Kevin Yanza</h5>
+                    <p>Egresados</p>
+                    <div class="testimonial-text bg-light text-center p-4">
+                        <p class="mb-0">Estudiante egresado de la Universidad Central del Ecuador en la Facultad de Filosofía, Letras y Ciencias de la Educación de la Carrera de Pedagogía de las Ciencias Experimentales Informática</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+
+                <h4 class="text-white mb-3">Contáctos</h4>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Teléfono</h4>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>099 042 4907</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>096 168 1102</p>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">E-mail</h4>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>samoya@uce.edu.ec</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>kayanzat@uce.edu.ec</p>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Dirección</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>RF2X+C3R, Quito 170129</p>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Redes sociales
+                    </h4>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">SAKE.IA</a>. Todos los Derechos Reservados.
+                        Diseñado por Moya Sander y Yanza Kevin
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Cookies</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    
+    <script src="js/main.js"></script>
+
+    <script src="https://bots.easy-peasy.ai/chat.min.js" data-chat-url="https://www.stack-ai.com/chat-assistant/b135e8c8-a05e-4ee5-b3b2-80d1a85a8ee7/d4752352-f989-4f2c-ab08-68ebd572a23b/6716d1f40649761525ac2551" data-btn-position="bottom-left" data-widget-btn-color="#e99a22 " defer> </script>
+</body>
+
+</html>
