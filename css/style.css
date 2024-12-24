@@ -5,6 +5,26 @@
     --dark: #181d38;
 }
 
+        /* Ajusta el ancho del chatbot */
+.easy-peasy-chat-widget-frame {
+            width: 400px !important; /* Cambia el ancho a lo que prefieras */
+        }
+        .chatbot-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 400px;
+            height: 500px;
+            display: none; /* Inicialmente oculto */
+        }
+        .close-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            color: #e99a22; /* Color de la X */
+        }
 .fw-medium {
     font-weight: 600 !important;
 }
@@ -250,7 +270,13 @@
     width: calc(100% + 60px);
     left: 0;
 }
-
+/*** Chatboot ***/
+.card-title{
+    font-size: 30px;
+}
+.card-text{
+    font-size: 20px;
+}
 
 /*** Service ***/
 .service-item {
